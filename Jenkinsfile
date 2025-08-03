@@ -22,6 +22,13 @@ pipeline
 			{
 				sh 'mvn clean'
 			}
+		}
+		stage('Build Stage')
+		{
+			steps
+			{
+				sh 'mvn package'
+			}
 		}		
 		
 		stage('Build Success')
