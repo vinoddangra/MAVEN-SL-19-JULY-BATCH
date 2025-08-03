@@ -22,6 +22,10 @@ public class MyCalc {
 	{
 		return a%b;
 	}
+	public void branch()
+	{
+		System.out.println("Hello from Master Branch");
+	}
 
 	public static void main(String[] args) {
 
@@ -31,6 +35,7 @@ public class MyCalc {
 		System.out.println("mul is :"+calc.mul(20, 10));
 		System.out.println("Div is :"+calc.div(20, 10));
 		System.out.println("Mod is :"+calc.mod(20, 10));
+		calc.branch();
 	}
 
 }
